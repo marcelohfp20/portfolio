@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Cases | Marcelo Henrique</title>
+</head>
+
+<body>
+
+    <header class="cases-header">
+
+        <div class="menu-cases">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="cases.html" class="selected-menu">Cases</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main class="cases-main">
+
+        <div class="title-cases">
+
+            <h1>Real cases</h1>
+
+        </div>
+
+        <section class="cases-list">
+
+            <div class="item conta-justa-1" id="cardItemJusta1" onclick="redirectContaJusta()">
+
+                <div class="description" id="hoverDescriptionJusta1">
+
+                    <div class="text">
+
+                        <p class="title">Aplicativo Conta Justa</p>
+
+                        <p class="subtitle">Justa Pagamentos</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="item conta-justa-2" id="cardItemJusta2">
+
+                <div class="description" id="hoverDescriptionJusta2">
+
+                    <div class="text">
+
+                        <p class="title">Aplicativo Portal do Justo</p>
+
+                        <p class="subtitle">Justa Pagamentos</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="item conta-justa-3" id="cardItemJusta3">
+
+                <div class="description" id="hoverDescriptionJusta3">
+
+                    <div class="text">
+
+                        <p class="title">Aplicativo Conta Justa</p>
+
+                        <p class="subtitle">Justa Pagamentos</p>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+        </section>
+
+    </main>
+
+</body>
+
+<script>
+    var cardItem1 = document.getElementById("cardItemJusta1");
+    var hoverDescription1 = document.getElementById("hoverDescriptionJusta1");
+
+    var cardItem2 = document.getElementById("cardItemJusta2");
+    var hoverDescription2 = document.getElementById("hoverDescriptionJusta2");
+
+    var cardItem3 = document.getElementById("cardItemJusta3");
+    var hoverDescription3 = document.getElementById("hoverDescriptionJusta3");
+
+    cardItem1.addEventListener("mouseover", mouseOver1);
+    cardItem1.addEventListener("mouseout", mouseOut1);
+
+    cardItem2.addEventListener("mouseover", mouseOver2);
+    cardItem2.addEventListener("mouseout", mouseOut2);
+
+    cardItem3.addEventListener("mouseover", mouseOver3);
+    cardItem3.addEventListener("mouseout", mouseOut3);
+
+    function mouseOver1() {
+        hoverDescription1.style.display = "flex";
+    }
+
+    function mouseOut1() {
+        hoverDescription1.style.display = "none";
+    }
+
+    function mouseOver2() {
+        hoverDescription2.style.display = "flex";
+    }
+
+    function mouseOut2() {
+        hoverDescription2.style.display = "none";
+    }
+
+    function mouseOver3() {
+        hoverDescription3.style.display = "flex";
+    }
+
+    function mouseOut3() {
+        hoverDescription3.style.display = "none";
+    }
+
+    function redirectContaJusta() {
+        location.href = "conta-justa.html"
+    }
+</script>
+
+</html>

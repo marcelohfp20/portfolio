@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Marcelo Henrique</title>
+</head>
+
+<body id="resolucao">
+
+    <header class="home-header">
+
+        <div class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="index.html" class="selected-menu">Home</a>
+                </li>
+
+                <li>
+                    <a href="cases.html">Cases</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="header-title" id="header">
+
+            <div class="header-photo-container">
+
+                <div class="photo"></div>
+
+            </div>
+
+            <div class="header-text">
+
+                <p class="header-title-font-g fadeIn">Oi, sou o Marcelo <br> Henrique</p>
+
+                <p class="header-subtitle">Product Designer</p>
+
+                <div class="social-media">
+
+                    <div class="gmail icon" onclick="redirectEmail()"></div>
+
+                    <div class="linkedin icon" onclick="redirectLinkedin()"></div>
+
+                    <div class="behance icon" onclick="redirectBehance()"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="home-main">
+
+        <section class="with-me">
+
+
+            <div class="with-me-description">
+
+                <div>
+
+                    <p class="with-me-title">
+
+                        Sobre Mim
+
+                    </p>
+
+
+                    <p class="with-me-text">Olá, meu nome é Marcelo Henrique sou designer UX/UI. Atualmente trabalho na criação de produtos digitais, transitando por pesquisas e jornadas para o levantamento do problema, até a criação de interfaces para a apresentação da solução.</p>
+
+                </div>
+
+                <div class="with-me-show-more">
+
+                    <button onclick="showMore()" id="showMore">
+
+                            <p>ver mais</p>
+
+                            <i class="fas fa-sort-down"></i>
+
+                    </button>
+
+                    <button onclick="showLess()" class="none" id="showLess">
+
+                        <p>ver menos</p>
+
+                        <i class="fas fa-sort-up"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="with-me-photo-container">
+
+                <div class="photo"></div>
+
+            </div>
+
+        </section>
+
+        <section class="timeline" id="timeline">
+
+            <div class="timeline-icon">
+
+                <div class="time">
+
+                    <p>2017</p>
+
+                    <div class="dot"></div>
+
+                </div>
+
+                <div class="line-container">
+
+                    <div class="line"></div>
+
+                </div>
+
+                <div class="time">
+
+                    <p>2019</p>
+
+                    <div class="dot no-ma-top"></div>
+
+                </div>
+
+                <div class="line-container">
+
+                    <div class="line"></div>
+
+                </div>
+
+                <div class="time">
+
+                    <p>2020</p>
+
+                    <div class="dot no-ma-top"></div>
+
+                </div>
+
+            </div>
+
+            <div class="experiences">
+
+                <div class="item">
+
+                    <div class="item-text">
+
+                        <p class="title">
+                            Senai
+                        </p>
+
+                        <p class="subtitle">
+                            Técnico em Informática & Desenvolvimento de Sistemas
+
+                        </p>
+
+                        <p class="text">
+                            Foi no SENAI onde a paixão pela tecnologia surgiu. Durante o curso, passei por diversas etapas do desenvolvimento de um projeto real, sendo elas:
+                        </p>
+
+                        <p>
+                            <ul class="ma-left-m">
+                                <li class="text">Metodologias Ágeis</li>
+                                <li class="text">UX/UI</li>
+                                <li class="text">Desenvolvimento Frontend</li>
+                                <li class="text">Desenvolvimento Backend</li>
+                                <li class="text">Desenvolvimento Mobile</li>
+                            </ul>
+                        </p>
+
+                    </div>
+
+                    <div class="item-image">
+
+                        <div class="senai"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="item ma-top-m">
+
+                    <div class="item-text">
+
+                        <p class="title">
+                            Space Needle Tecnologia
+                        </p>
+
+                        <p class="subtitle">
+                            Designer UX/UI
+
+                        </p>
+
+                        <p class="text">
+                            Na Space Needle tive o prazer em trabalhar com diversos clientes, entender os seus problemas e ajuda-lo a levar a tecnologia através de produtos digitais para os seus usuários.
+                        </p>
+
+                    </div>
+
+                    <div class="item-image">
+
+                        <div class="space-needle"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="item ma-top-g">
+
+                    <div class="item-text">
+
+                        <p class="title">
+                            Justa pagamentos e serviços financeiros
+                        </p>
+
+                        <p class="subtitle">
+                            Product Designer
+
+                        </p>
+
+                        <p class="text">
+                            Com a Justa tive a experiência em me aproximar do usuário final, sentir o que ele sente, ouvir e entender de forma mais próxima. Trabalhar com o próprio produto é um lado da moeda diferente e aprendi muitas coisas, até fui para a rua testar os produtos
+                            ao lado do usuário e isso é uma experiência única, um jeito diferente de ver o seu trabalho.
+
+                        </p>
+
+                    </div>
+
+                    <div class="item-image">
+
+                        <div class="justa"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cases">
+
+            <div class="cases-text">
+
+                <p class="title">Cases</p>
+
+                <p class="text">Aqui se concentra o trabalho da minha vida, todos os cases reais e de estudos que me orgulho durante essa jornada que só começou. Tenho a honra de mencionar grandes nomes no meu portfolio, cujo aprendi uma coisa nova a cada minuto, seja
+                    elas habilidades técnicas ou pessoais, pois trabalhar em equipe não é uma carreira solo, e muitas coisas precisam ser aprendidas para um bom desempenho como pessoa e como membro de uma equipe.</p>
+
+                <div class="projects">
+
+                    <div class="item poliedro"></div>
+
+                    <div class="item deloitte"></div>
+
+                    <div class="item justa"></div>
+
+                </div>
+
+                <div class="access">
+
+                    <button class="btn-access" onclick="redirectCases()">Acessar</button>
+
+                </div>
+
+            </div>
+
+
+            <div class="mock">
+
+                <p>Passe o mouse</p>
+
+                <div class="imagesection" id="imagesection">
+                    <div class="imagea firstimg">
+                        <div class="final-image">
+                            <img src="Assets/Mock/conta-justa-layout.png">
+                        </div>
+                    </div>
+                    <div class="imagea secondimg">
+                        <div class="final-image">
+                            <img src="Assets/Mock/conta-justa-wireframe.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
+
+<script>
+    var test = document.getElementById('header');
+    window.addEventListener('scroll', function(e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop ||
+            document.body.scrollTop || 0;
+        test.style.opacity = Math.max(0, Math.min(1, -scroll / 400 + 1));
+    });
+
+    let timeline = document.getElementById('timeline');
+    let showMoreBtn = document.getElementById('showMore');
+    let showLessBtn = document.getElementById('showLess');
+
+    function showMore() {
+
+        timeline.classList.add("flex");
+        showMoreBtn.classList.add("none");
+        showLessBtn.classList.add("flex");
+        showLessBtn.classList.remove("none");
+
+    }
+
+    function showLess() {
+
+        timeline.classList.remove("flex");
+        showMoreBtn.classList.remove("none");
+        showLessBtn.classList.remove("flex");
+        showLessBtn.classList.add("none");
+
+    }
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        let banner = document.getElementById('imagesection');
+        let devLayer = banner.querySelector('.secondimg');
+        let delta = 0;
+
+        console.log(window.innerWidth)
+
+        banner.addEventListener('mousemove', function(e) {
+            delta = (e.clientX - window.innerWidth / 2) * 0.5;
+
+            if (window.innerWidth <= 1920 && window.innerWidth >= 1800) {
+                devLayer.style.width = e.clientX + -700 + delta + 'px';
+            } else if (window.innerWidth < 1800 && window.innerWidth >= 1650) {
+                devLayer.style.width = e.clientX + -600 + delta + 'px';
+            } else if (window.innerWidth < 1650 && window.innerWidth >= 1550) {
+                devLayer.style.width = e.clientX + -500 + delta + 'px';
+            } else if (window.innerWidth < 1550 && window.innerWidth >= 1450) {
+                devLayer.style.width = e.clientX + -220 + delta + 'px';
+            } else if (window.innerWidth < 1450 && window.innerWidth >= 1350) {
+                devLayer.style.width = e.clientX + -250 + delta + 'px';
+            } else if (window.innerWidth < 1350 && window.innerWidth >= 1250) {
+                devLayer.style.width = e.clientX + -150 + delta + 'px';
+            } else if (window.innerWidth < 1250 && window.innerWidth >= 1150) {
+                devLayer.style.width = e.clientX + -50 + delta + 'px';
+            } else if (window.innerWidth < 1150 && window.innerWidth >= 1000) {
+                devLayer.style.width = e.clientX + 100 + delta + 'px';
+            }
+
+        });
+
+    })
+
+    function redirectCases() {
+
+        location.href = "cases.html"
+    }
+
+    function redirectEmail() {
+        window.open("mailto:marcelohfp20@gmail.com");
+
+    }
+
+    function redirectLinkedin() {
+        window.open("https://www.linkedin.com/in/marcelohenriquef/");
+
+    }
+
+    function redirectBehance() {
+        window.open("https://www.behance.net/marcelohenrique2");
+
+    }
+</script>

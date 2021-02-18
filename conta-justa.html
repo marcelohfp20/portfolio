@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>App Conta Justa | Marcelo Henrique</title>
+</head>
+
+<body>
+
+    <header class="case-page-header">
+
+        <div class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="cases.html" class="selected-menu">Cases</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="text" id="header">
+
+            <h1>Conta Justa</h1>
+
+            <h2>Aplicativo</h2>
+
+            <div class="btn-area">
+
+                <button class="google-play" onclick="redirectGooglePlay()"></button>
+
+                <button class="app-store" onclick="redirectAppStore()"></button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="case-page-main" id="casePageMain">
+
+        <section class="case-page-text">
+
+            <div class="anchor" id="introducao">
+
+                <div class="topic">
+
+                    <p class="title">Introdução</p>
+
+                    <p class="text">A empresa citada é a Justa Pagamentos, uma fintech sobre meios de pagamentos, focada
+                        em pequenos varejistas por todo o Brasil.</p>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="problema">
+
+                <div class="topic">
+
+                    <p class="title">Problema</p>
+
+                    <p class="text">Atualmente os clientes varejistas usam o site (Portal do Lojista), para gerenciar as
+                        suas vendas e configurar os adiantamentos de recebíveis. De acordo com feedbacks recebidos pelos
+                        mesmos durante suas jornadas, o site precisaria de
+                        uma versão responsiva para o gerenciamento do negocio fluir de forma rápida e eficiente através
+                        do seu celular, já que o site não foi feito com um suporte/tecnologia para ser visualizado em um
+                        dispositivo menor.</p>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="solucao">
+
+                <div class="topic">
+
+                    <p class="title">Solução</p>
+
+                    <p class="text">Criar um aplicativo intuitivo e simples para ajudar o lojista a gerenciar as suas
+                        vendas de forma fácil e mais próxima com a sua realidade.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="desafio">
+
+                <div class="topic">
+
+                    <p class="title">Desafio</p>
+
+                    <p class="subtitle">O meu desafio no projeto como product designer foi:</p>
+
+                    <div class="item-list">
+
+                        <div class="item">
+
+                            <p class="text">Levantar todos os requisitos mínimos para uma primeira entrega, junto com o
+                                stake holder responsável pelo projeto.</p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="text">Analisar junto com o Product Owner os endpoints já criados anteriormente no
+                                portal WEB do lojista, para implementar os mesmos no APP.</p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="text">Realizar uma análise de competitividade para entender fluxos desejados já
+                                existentes no mercado.
+                            </p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="text">Criar wireframe de alta fidelidade para validação interna de novas
+                                hipóteses.</p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="text">Criar protótipo navegável para testes internos, e também para auxiliar a
+                                equipe responsável no desenvolvimento do projeto.</p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="text">Realizar "Design Review" junto com o time durante a Sprint. Garantindo uma
+                                experiência / interface mais próxima do planejado.
+                            </p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="text">Trazer uma solução consistente para analise de desempenho do APP, seja elas
+                                na parte técnica e também na experiência durante as jornadas.
+                            </p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="text">Levantar insights do APP através de pesquisas com usuários ativos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="sitemap">
+
+                <div class="topic">
+
+                    <p class="title">Sitemap</p>
+
+                    <div class="sitemap-container">
+
+                        <div class="expand" onclick="redirectSitemap()"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="wireframe">
+
+                <div class="topic">
+
+                    <p class="title">Wireframe</p>
+
+                    <p class="text">Para alinhar as ideias de layout foi criado alguns rabiscos que foram levados da
+                        mesma forma para o digital, sendo eles em baixa e alta fidelidade para a validação da sua
+                        estrutura e jornada.</p>
+
+                    <div class="wireframe-list">
+
+                        <div style="width: 40%">
+
+                            <div class="img wireframe">
+                            </div>
+
+                            <p>Wireframe baixa fidelidade</p>
+
+                        </div>
+
+                        <div style="width: 40%">
+
+                            <div class="img layout">
+                            </div>
+
+                            <p>Wireframe alta fidelidade</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="wireframe-map"></div>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="layout">
+
+                <div class="topic">
+
+                    <p class="title">Layout</p>
+
+                    <div class="onboarding-container">
+
+                        <div class="image"></div>
+
+                        <div class="image-content"></div>
+
+                        <div class="text">
+
+                            <p class="title">Onboarding</p>
+
+                            <p class="subtitle">Bem vindo ao APP</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="layout">
+
+                        <div class="item">
+
+                            <div class="text">
+
+                                <p class="title">Home</p>
+
+                                <p class="subtitle">Aqui se concentra todas as funcionalidades do APP de forma rápida e
+                                    fácil.</p>
+
+                                <div class="card-area">
+
+                                    <div class="card-1"></div>
+
+                                    <div class="card-2"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="image home"></div>
+
+                        </div>
+
+                        <div class="item row-reverse">
+
+                            <div class="text">
+
+                                <p class="title">Gestão de vendas</p>
+
+                                <p class="subtitle">Acompanhe em tempo real os detalhes das suas vendas do dia.
+                                </p>
+
+                            </div>
+
+                            <div class="image manage"></div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="text">
+
+                                <p class="title">Agenda de recebíveis</p>
+
+                                <p class="subtitle">Tenha o controle dos seus recebíveis com a nossa agenda.
+                                </p>
+
+                            </div>
+
+                            <div class="schedule-2"></div>
+
+                            <div class="schedule"></div>
+
+                        </div>
+
+                        <div class="item row-reverse">
+
+                            <div class="text" style="width:60%">
+
+                                <p class="title ma-left-250px" style="min-width: 430px;">Cartão pré pago</p>
+
+                                <p class="subtitle ma-left-250px" style="min-width: 430px;">Todo o saldo das suas vendas
+                                    pode ser levadas para o cartão pré pago, basta realizar uma recarga rápida ou
+                                    programar o dia.
+                                </p>
+
+                            </div>
+
+                            <div class="card-pp"></div>
+
+                            <div class="card-pp-2"></div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="text">
+
+                                <p class="title">Vendas Online</p>
+
+                                <p class="subtitle">Caso quiser realizar vendas online, crie um LINKOU! a ferramenta de
+                                    vendas online.
+                                </p>
+
+                            </div>
+
+                            <div class="sales-on-2"></div>
+
+                            <div class="sales-on"></div>
+
+                        </div>
+
+                        <div class="item row-reverse">
+
+                            <div class="text" style="width:60%">
+
+                                <p class="title ma-left-250px" style="min-width: 430px;">Pagamento de contas</p>
+
+                                <p class="subtitle ma-left-250px" style="min-width: 430px;">Pague as suas contas com o
+                                    saldo de vendas da sua empresa.
+                                </p>
+
+                            </div>
+
+                            <div class="pay"></div>
+
+                            <div class="pay-2"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="analise">
+
+                <div class="topic">
+
+                    <p class="title">Análises</p>
+
+                    <p class="subtitle">Para testar o desenvolvimento das hipóteses criadas na primeira versão,
+                        implementamos os seguintes processos:</p>
+
+
+                    <div class="analytics-list">
+
+                        <div class="item">
+
+                            <p class="number">01</p>
+
+                            <p class="title">SDK do Google (FIREBASE)
+                            </p>
+
+                            <p class="text">Criamos eventos durante jornadas
+                                especificas dentro do APP com o objetivo de
+                                mensurar a porcentagem de desistências
+                                dos usuários.</p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="number">02</p>
+
+                            <p class="title">Feedback induzido
+                            </p>
+
+                            <p class="text">Adicionamos um modal que aparece uma vez a cada 3 dias
+                                pedindo para o usuário avaliar o APP na loja. Caso o usuário
+                                já tenha clicado em avaliar dentro do modal, ele passa a
+                                aparecer 1 vez por mês (Período médio de uma nova release).</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="analytics-list">
+
+                        <div class="item">
+
+                            <p class="number">03</p>
+
+                            <p class="title">Pesquisa NPS
+                            </p>
+
+                            <p class="text">Rodamos uma pesquisa NPS no canal de
+                                comunicação da empresa, para saber o nível
+                                de desempenho do APP e o quanto o usuário
+                                recomendaria para as outras pessoas.</p>
+
+                        </div>
+
+                        <div class="item">
+
+                            <p class="number">04</p>
+
+                            <p class="title">SDK da Microsoft (AppCenter)
+                            </p>
+
+                            <p class="text">Implementamos um SDK mais especializado nas análises
+                                técnicas do APP, para acompanhar o desempenho das API's
+                                através dos disparos de erros e crashes.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="lateral-menu" id="lateralMenu">
+
+            <ul>
+
+                <li>
+                    <a href="#introducao" class="anchor-item">Introdução</a>
+                </li>
+
+                <li>
+                    <a href="#problema" class="anchor-item">Problema</a>
+                </li>
+
+                <li>
+                    <a href="#solucao" class="anchor-item">Solução</a>
+                </li>
+
+                <li>
+                    <a href="#desafio" class="anchor-item">Desafio</a>
+                </li>
+
+                <li>
+                    <a href="#sitemap" class="anchor-item">Sitemap</a>
+                </li>
+
+                <li>
+                    <a href="#wireframe" class="anchor-item">Wireframe</a>
+                </li>
+
+                <li>
+                    <a href="#layout" class="anchor-item">Layout</a>
+                </li>
+
+                <li>
+                    <a href="#analise" class="anchor-item">Análises</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </main>
+
+    <footer class="case-footer">
+
+        <p>Obrigado pela atenção !</p>
+
+    </footer>
+
+</body>
+
+<script>
+    var test = document.getElementById('header');
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop ||
+            document.body.scrollTop || 0;
+        test.style.opacity = Math.max(0, Math.min(1, -scroll / 400 + 1));
+    });
+
+    $(document).ready(function () {
+
+        $('a[href^="#introducao"]').addClass('active');
+
+        $('.anchor-item').on('click', function (e) {
+            e.preventDefault();
+            var athis = this;
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $('.anchor-item').removeClass('active');
+                $(athis).addClass('active');
+
+            });
+        });
+
+        $(window).scroll(function (event) {
+            var scrollPos = $(document).scrollTop();
+            if (scrollPos === 0) {
+                $('a[href^="#introducao"]').addClass('active');
+                return;
+            }
+            $('.anchor-item').each(function () {
+                var currLink = $(this);
+                var refElement = $(currLink.attr("href"));
+
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                    $('.anchor-item').removeClass("active");
+                    currLink.addClass("active");
+                }
+
+            });
+        })
+    });
+
+    if (jQuery(this).scrollTop() <= 0) {
+        $(".lateral-menu").addClass("no-opacity");
+    }
+    jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 350) {
+            $(".lateral-menu").removeClass("no-opacity");
+            $(".lateral-menu").fadeIn();
+        } else {
+            $(".lateral-menu").fadeOut();
+        }
+    });
+
+    function redirectGooglePlay() {
+
+        window.open("https://play.google.com/store/apps/details?id=br.com.justa.contajusta&hl=pt_BR");
+
+    }
+
+    function redirectAppStore() {
+
+        window.open("https://apps.apple.com/us/app/conta-justa/id1529173880");
+
+    }
+
+    function redirectSitemap() {
+
+        window.open("/conta-justa-sitemap.html");
+
+    }
+</script>
+
+</html>

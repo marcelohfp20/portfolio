@@ -1,0 +1,1245 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url("Fonts/Merriweather/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather-Black";
+    src: url("Fonts/Merriweather/Merriweather-Black.ttf");
+}
+
+@font-face {
+    font-family: "Merriweather-Light";
+    src: url("Fonts/Merriweather/Merriweather-Light.ttf");
+}
+
+
+/* HELPER */
+
+button:focus,
+button:active {
+    outline: none;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.ma-top-m {
+    margin-top: 100px;
+}
+
+.ma-top-g {
+    margin-top: 300px;
+}
+
+.ma-left-m {
+    margin-left: 20px;
+}
+
+.no-opacity {
+    opacity: 0;
+}
+
+.with-opacity {
+    opacity: 1 !important;
+}
+
+
+/* HOME */
+
+
+/* HEADER */
+
+.home-header {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.menu {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    margin-right: 60px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: white;
+    font-family: "Merriweather";
+    text-transform: uppercase;
+}
+
+.selected-menu {
+    border-bottom: 3px solid #F25918;
+}
+
+.header-title {
+    display: flex;
+    min-height: 70vh;
+}
+
+.header-photo-container {
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-photo-container .photo {
+    background-image: url("Images/marcelo-henrique-photo.jpg");
+    height: 250px;
+    width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.header-text {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-title-font-g {
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Merriweather-Black";
+    animation: fadeIn 5s linear;
+}
+
+.header-subtitle {
+    color: #F25918;
+    font-family: "Merriweather";
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.social-media {
+    width: 220px;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-media .icon {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.social-media .gmail {
+    background-image: url("Icons/gmail.png");
+}
+
+.social-media .linkedin {
+    background-image: url("Icons/linkedin.png");
+}
+
+.social-media .behance {
+    background-image: url("Icons/behance.png");
+}
+
+.home-main {
+    margin-top: 80vh;
+    z-index: 1;
+}
+
+
+/* WITH-ME */
+
+.with-me {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.with-me-description {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.with-me-title {
+    color: #F25918;
+    font-size: 1.3em;
+    font-family: "Merriweather";
+    font-weight: bold;
+}
+
+.with-me-text {
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: "Merriweather";
+    color: #353535;
+    line-height: 30px;
+}
+
+.with-me-photo-container {
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.with-me-photo-container .photo {
+    background-image: url("Images/marcelo-henrique-with-me.jpg");
+    height: 400px;
+    min-width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    opacity: 0.9;
+}
+
+.with-me-show-more {
+    height: 10vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.with-me-show-more button {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.with-me-show-more p {
+    font-size: 1em;
+    color: #F25918;
+    font-family: "Merriweather";
+    font-weight: bold;
+}
+
+.with-me-show-more button .fa-sort-up {
+    font-size: 1.2em;
+    margin: 10px 10px 0px 10px;
+    color: #F25918;
+}
+
+.with-me-show-more button .fa-sort-down {
+    font-size: 1.2em;
+    margin: 0px 10px 5px 10px;
+    color: #F25918;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    display: none;
+    padding: 20px 20px 165px 20px;
+    min-height: 80vh;
+    background-color: #EFEFEF;
+}
+
+.timeline-icon {
+    width: 500px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.timeline-icon .time {
+    display: flex;
+    width: 100px;
+    justify-content: flex-end;
+    margin-top: -22px;
+}
+
+.timeline-icon .line-container {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-icon .line-container .line {
+    background-color: #F25918;
+    width: 2px;
+    height: 430px;
+}
+
+.timeline-icon .dot {
+    background-color: #F25918;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-top: 20px;
+}
+
+.timeline-icon p {
+    color: #353535;
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-right: 5px;
+    line-height: 30px;
+}
+
+.experiences {
+    margin: 20px 0px 0 20px;
+}
+
+.experiences .item {
+    display: flex;
+}
+
+.experiences .item .item-text {
+    width: 50%;
+}
+
+.experiences .item .item-text .title {
+    color: #F25918;
+    font-family: "Merriweather";
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.experiences .item .item-text .subtitle {
+    color: #767676;
+    font-family: "Merriweather";
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.experiences .item .item-text .text {
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 1em;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.experiences .item .item-image {
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiences .item .item-image .space-needle {
+    background-image: url("Images/space-needle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 20vh;
+    min-width: 200px;
+}
+
+.experiences .item .item-image .justa {
+    background-image: url("Images/justa.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 8vh;
+    min-width: 160px;
+}
+
+.experiences .item .item-image .senai {
+    background-image: url("Images/senai.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 200px;
+    width: 35%;
+    height: 7vh;
+}
+
+
+/* CASES */
+
+.cases {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    padding: 10% 10% 10% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cases-text {
+    width: 50%;
+}
+
+.cases-text .title {
+    color: #F25918;
+    font-size: 1.3em;
+    font-family: "Merriweather";
+    font-weight: bold;
+}
+
+.cases-text .text {
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: "Merriweather";
+    color: #353535;
+    line-height: 30px;
+}
+
+.projects {
+    height: 20vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.projects .poliedro {
+    background-image: url("Images/poliedro.jpg");
+    width: 190px;
+    height: 80px;
+}
+
+.projects .deloitte {
+    background-image: url("Images/deloitte.png");
+    width: 120px;
+    height: 40px;
+}
+
+.projects .justa {
+    background-image: url("Images/justa.png");
+    width: 120px;
+    height: 40px;
+}
+
+.access {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-access {
+    background-color: #F25918;
+    color: white;
+    font-family: "Merriweather";
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.btn-access:hover {
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.mock {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.mock p {
+    font-family: "Merriweather";
+    color: #767676;
+    font-size: 0.8em;
+    margin: 0px 80px 20px 0px;
+}
+
+.imagesection {
+    position: relative;
+    width: 90%;
+    height: 620px;
+    overflow: hidden;
+}
+
+.imagea {
+    position: absolute;
+    overflow: hidden;
+}
+
+.imagea.secondimg .final-image {
+    transform: skew(0deg);
+    margin-left: 900px;
+}
+
+.imagea.secondimg {
+    transform: skew(0deg);
+    margin-left: -900px;
+    width: calc(15vw + 100px);
+}
+
+.imagea .final-image {
+    height: 620px;
+}
+
+.imagea img {
+    width: 260px;
+}
+
+
+/* CASES */
+
+.cases-header {
+    height: 20vh;
+}
+
+.cases-main {
+    padding: 0 6%;
+}
+
+.menu-cases {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-cases ul {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    margin-right: 60px;
+}
+
+.menu-cases li {
+    list-style: none;
+}
+
+.menu-cases a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: black;
+    font-family: "Merriweather";
+    text-transform: uppercase;
+}
+
+.title-cases {
+    font-size: 1em;
+    color: #F25918;
+    font-family: "Merriweather-Black";
+    margin-bottom: 30px;
+}
+
+.cases-list {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cases-list .item {
+    width: 30%;
+    min-width: 350px;
+    height: 45vh;
+    border-radius: 3%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.cases-list .conta-justa-1 {
+    background-image: url("Mock/cases/ContaJusta.jpg");
+}
+
+.cases-list .conta-justa-2 {
+    background-image: url("Mock/cases/Justo.jpg");
+}
+
+.cases-list .conta-justa-3 {
+    background-image: url("Mock/cases/ContaJusta.jpg");
+}
+
+.cases-list .item .description {
+    background: linear-gradient(to bottom, rgba(29, 40, 99, 0.1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+    border-radius: 3%;
+    height: 12vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5%;
+}
+
+.cases-list .item .text {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cases-list .item .description .title {
+    font-size: 1em;
+    color: white;
+    font-family: "Merriweather";
+    font-weight: bold;
+}
+
+.cases-list .item .description .subtitle {
+    font-size: 0.8em;
+    color: white;
+    font-family: "Merriweather-Light";
+}
+
+
+/* CASE PAGE */
+
+.case-page-header {
+    height: 80vh;
+    width: 100%;
+    background-image: url("Mock/cases/ContaJusta_Detalhes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    animation: fadeIn 5s linear;
+}
+
+.case-page-header .text {
+    width: 50%;
+    height: 70vh;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.case-page-header .text h1 {
+    font-size: 2.8em;
+    color: white;
+    font-family: "Merriweather";
+    font-weight: bold;
+}
+
+.case-page-header .text h2 {
+    font-size: 1.3em;
+    color: white;
+    font-family: "Merriweather-Light";
+    margin-top: 0.5%;
+}
+
+.case-page-header .text .btn-area {
+    width: 100%;
+    height: 10vh;
+    margin-top: 7%;
+    display: flex;
+}
+
+.case-page-header .text .btn-area button {
+    width: 20%;
+    height: 7vh;
+    margin-right: 3%;
+    border: none;
+    cursor: pointer;
+    border-radius: 3%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.case-page-header .text .btn-area .app-store {
+    background-image: url("Icons/AppleStore.png");
+}
+
+.case-page-header .text .btn-area .google-play {
+    background-image: url("Icons/Playstore.png");
+}
+
+.case-page-text {
+    width: 80%;
+    min-height: 50vh;
+}
+
+.case-page-main {
+    display: flex;
+    padding: 7% 10%;
+    scroll-behavior: smooth;
+    background-color: white;
+    margin-top: 80vh;
+}
+
+.case-page-text {
+    width: 80%;
+    min-height: 50vh;
+}
+
+.case-page-text .topic {
+    min-height: 20vh;
+    width: 100%;
+}
+
+.case-page-text .topic .title {
+    color: #F25918;
+    font-family: "Merriweather";
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.case-page-text .topic .text {
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 1em;
+    margin: 2% 0;
+    line-height: 30px;
+}
+
+.case-page-text .topic .subtitle {
+    color: #767676;
+    font-family: "Merriweather";
+    font-size: 0.8em;
+    margin: 3% 0;
+    font-style: italic;
+}
+
+.case-page-text .topic .item-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.case-page-text .topic .item-list .item {
+    width: 45%;
+    min-width: 300px;
+    padding: 0% 2%;
+    border-left: #F25918 solid 4px;
+    margin-top: 8%;
+}
+
+.lateral-menu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    animation: fadeIn 5s linear;
+}
+
+.lateral-menu ul li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.lateral-menu ul li a {
+    text-decoration: none;
+    color: #767676;
+    font-family: "Merriweather";
+    font-size: 0.8em;
+    padding: 5%;
+    border-left: transparent 3px solid;
+}
+
+.active {
+    text-decoration: none;
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 0.8em;
+    border-left: #F25918 3px solid !important;
+    font-weight: bold;
+}
+
+.anchor {
+    height: auto;
+    padding: 10% 0% 10% 0%;
+}
+
+.sitemap-container {
+    background-image: url("Images/Sitemap.png");
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-top: 5%;
+    border-radius: 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sitemap-container .expand {
+    background-image: url("Icons/Expand_Icon.svg");
+    height: 16px;
+    width: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3%;
+    cursor: pointer;
+}
+
+.wireframe-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.wireframe-list .img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+    border: #bbb 1px solid;
+    display: flex;
+    align-items: flex-end;
+}
+
+.wireframe-list p {
+    margin-top: 2%;
+    text-align: center;
+    color: #767676;
+    font-family: "Merriweather";
+    font-size: 0.7em;
+}
+
+.wireframe-list .wireframe {
+    background-image: url("Images/Wireframe_Home.jpg");
+}
+
+.wireframe-list .layout {
+    background-image: url("Images/Home_Wire.jpg");
+}
+
+.wireframe-map {
+    margin-top: 10%;
+    background-image: url("Images/Wireframe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    min-height: 130vh;
+}
+
+.onboarding-container {
+    margin-top: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.onboarding-container .image {
+    background-image: url("Mock/onboarding.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 74vh;
+    position: absolute;
+    left: 0;
+}
+
+.onboarding-container .image-content {
+    width: 90%;
+    height: 60vh;
+}
+
+.onboarding-container .text {
+    height: 50vh;
+    width: 50%;
+}
+
+.onboarding-container .text .title {
+    color: #353535;
+    font-size: 2em;
+}
+
+.onboarding-container .text .subtitle {
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 1em;
+    font-style: normal;
+}
+
+.layout .item {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 300px;
+    width: 85%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.layout .item .text {
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout .item .text .title {
+    color: #353535;
+    font-size: 2em;
+}
+
+.layout .item .text .subtitle {
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 1em;
+    font-style: normal;
+    margin-top: 40px;
+}
+
+.layout .item .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 74vh;
+}
+
+.layout .item .home {
+    background-image: url("Mock/Home.png");
+}
+
+.layout .item .manage {
+    background-image: url("Mock/VendasHoje.png");
+}
+
+.layout .item .schedule {
+    background-image: url("Mock/Agenda.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18%;
+    height: 74vh;
+    position: absolute;
+    right: 300px;
+}
+
+.layout .item .schedule-2 {
+    background-image: url("Mock/Agenda2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 27%;
+    height: 60vh;
+}
+
+.layout .item .sales-on {
+    background-image: url("Mock/Linkou.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18%;
+    height: 74vh;
+    position: absolute;
+    right: 300px;
+}
+
+.layout .item .sales-on-2 {
+    background-image: url("Mock/Linkou-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 27%;
+    height: 60vh;
+}
+
+.layout .item .card-pp {
+    background-image: url("Mock/RecargaRapida.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15%;
+    height: 61vh;
+    position: absolute;
+    left: 400px;
+}
+
+.layout .item .pay-2 {
+    background-image: url("Mock/PagarConta1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 74vh;
+    z-index: 1;
+}
+
+.layout .item .pay {
+    background-image: url("Mock/PagarConta2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15%;
+    height: 61vh;
+    position: absolute;
+    left: 400px;
+}
+
+.layout .item .card-pp-2 {
+    background-image: url("Mock/Cartão.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33%;
+    height: 74vh;
+    z-index: 1;
+}
+
+.layout .item .card-area {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.layout .item .card-area .card-1 {
+    background-image: url("Images/Card_home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49%;
+    height: 17vh;
+}
+
+.layout .item .card-area .card-2 {
+    background-image: url("Images/Card_home2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49%;
+    height: 17vh;
+}
+
+.ma-left-250px {
+    margin-left: 250px !important;
+}
+
+.analytics-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.analytics-list .item{
+    width: 40%;
+}
+
+.analytics-list .item .number{
+    color: #E5E5E5;
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 3.5em;
+    position: absolute;
+}
+
+.analytics-list .item .title{
+    color: #353535;
+    font-family: "Merriweather";
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 45px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.analytics-list .item .text{
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 1em;
+}
+
+.sitemap-main{
+    background-image: url("Images/Sitemap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    margin-top: 85px;
+}
+
+.case-footer{
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.case-footer p{
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1650px) {
+    .mock {
+        width: 35%;
+    }
+    .projects {
+        width: 90%;
+    }
+    .onboarding-container .image {
+        height: 72vh;
+    }
+    .wireframe-map {
+        width: 81%;
+    }
+    .layout .item .schedule {
+        right: 385px;
+    }
+    .layout .item .sales-on {
+        right: 385px;
+    }
+    .layout .item .card-pp {
+        left: 500px;
+    }
+
+    .layout .item .pay {
+        left: 500px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .onboarding-container .image {
+        height: 75vh;
+    }
+    
+    .layout .item .schedule {
+        right: 260px;
+        height: 75vh;
+    }
+
+    .layout .item .sales-on {
+        right: 260px;
+        height: 75vh;
+    }
+
+    .layout .item .schedule-2 {
+        height: 63vh;
+    }
+
+    .layout .item .sales-on-2 {
+        height: 63vh;
+    }
+    
+    .layout .item .card-pp {
+        left: 355px;
+        height: 63vh;
+    }
+
+    .layout .item .pay {
+        left: 355px;
+        height: 63vh;
+    }
+
+    .layout .item .pay-2 {
+        height: 75vh;
+
+    }
+
+    .layout .item .image {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mock {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .with-me {
+        padding: 0px 8%;
+    }
+    .cases {
+        padding: 10% 8% 10% 8%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mock {
+        display: none;
+    }
+    .cases-text {
+        width: 80%;
+    }
+}
