@@ -451,35 +451,35 @@
             <ul>
 
                 <li>
-                    <a href="#introducao" class="anchor-item">Introdução</a>
+                    <a id="introducao" href="#introducao" class="anchor-item" onclick="redirect()">Introdução</a>
                 </li>
 
                 <li>
-                    <a href="#problema" class="anchor-item">Problema</a>
+                    <a id="problema" href="#problema" class="anchor-item" onclick="redirect()">Problema</a>
                 </li>
 
                 <li>
-                    <a href="#solucao" class="anchor-item">Solução</a>
+                    <a id="solucao" href="#solucao" class="anchor-item" onclick="redirect()">Solução</a>
                 </li>
 
                 <li>
-                    <a href="#desafio" class="anchor-item">Desafio</a>
+                    <a id="desafio" href="#desafio" class="anchor-item" onclick="redirect()">Desafio</a>
                 </li>
 
                 <li>
-                    <a href="#sitemap" class="anchor-item">Sitemap</a>
+                    <a id="sitemap" href="#sitemap" class="anchor-item" onclick="redirect()">Sitemap</a>
                 </li>
 
                 <li>
-                    <a href="#wireframe" class="anchor-item">Wireframe</a>
+                    <a id="wireframe" href="#wireframe" class="anchor-item" onclick="redirect()">Wireframe</a>
                 </li>
 
                 <li>
-                    <a href="#layout" class="anchor-item">Layout</a>
+                    <a id="layout" href="#layout" class="anchor-item" onclick="redirect()">Layout</a>
                 </li>
 
                 <li>
-                    <a href="#analise" class="anchor-item">Análises</a>
+                    <a id="analise" href="#analise" class="anchor-item" onclick="redirect()">Análises</a>
                 </li>
 
 
@@ -498,6 +498,52 @@
 </body>
 
 <script>
+
+    function redirect() {
+
+        var id = event.target.id;
+
+        switch (id) {
+            case 'introducao':
+
+                location.href = "#introducao";
+                break;
+            case 'problema':
+
+                location.href = "#problema";
+                break;
+            case 'solucao':
+
+                location.href = "#solucao";
+                break;
+            case 'desafio':
+
+                location.href = "#desafio";
+                break;
+            case 'sitemap':
+
+                location.href = "#sitemap";
+                break;
+            case 'wireframe':
+
+                location.href = "#wireframe";
+                break;
+            case 'layout':
+
+                location.href = "#layout";
+                break;
+            case 'analise':
+
+                location.href = "#analise";
+
+                break;
+
+            default:
+                break;
+        }
+
+    }
+
     var test = document.getElementById('header');
     window.addEventListener('scroll', function (e) {
         var scroll = window.pageYOffset || document.documentElement.scrollTop ||
@@ -509,7 +555,7 @@
 
         $('a[href^="#introducao"]').addClass('active');
 
-        $('.anchor-item').on('click', function (e) {
+        $('.anchor-item').click(function (e) {
             e.preventDefault();
             var athis = this;
             var target = this.hash,
@@ -526,6 +572,7 @@
         });
 
         $(window).scroll(function (event) {
+
             var scrollPos = $(document).scrollTop();
             if (scrollPos === 0) {
                 $('a[href^="#introducao"]').addClass('active');
@@ -541,6 +588,7 @@
                 }
 
             });
+
         })
     });
 
