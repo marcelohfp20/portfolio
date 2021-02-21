@@ -495,11 +495,10 @@ button:active {
     margin-top: -50px;
 }
 
-.mock .text{
+.mock .text {
     align-self: flex-start;
     width: 60%;
 }
-
 
 .mock .text p {
     font-family: "Merriweather";
@@ -856,6 +855,10 @@ button:active {
     margin-top: 5%;
 }
 
+.wireframe-list .img-container {
+    width: 40%;
+}
+
 .wireframe-list .img {
     background-position: center;
     background-repeat: no-repeat;
@@ -901,8 +904,8 @@ button:active {
 
 .onboarding-container .image {
     background-image: url("Mock/onboarding.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 50%;
     height: 74vh;
@@ -945,6 +948,10 @@ button:active {
     flex-direction: row-reverse;
 }
 
+.row-reverse .text {
+    width: 60% !important;
+}
+
 .layout .item .text {
     height: 50vh;
     width: 50%;
@@ -966,8 +973,8 @@ button:active {
 }
 
 .layout .item .image {
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 33%;
     height: 74vh;
@@ -983,8 +990,8 @@ button:active {
 
 .layout .item .schedule {
     background-image: url("Mock/Agenda.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 18%;
     height: 74vh;
@@ -994,8 +1001,8 @@ button:active {
 
 .layout .item .schedule-2 {
     background-image: url("Mock/Agenda2.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 27%;
     height: 60vh;
@@ -1003,8 +1010,8 @@ button:active {
 
 .layout .item .sales-on {
     background-image: url("Mock/Linkou.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 18%;
     height: 74vh;
@@ -1014,8 +1021,8 @@ button:active {
 
 .layout .item .sales-on-2 {
     background-image: url("Mock/Linkou-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 27%;
     height: 60vh;
@@ -1023,8 +1030,8 @@ button:active {
 
 .layout .item .card-pp {
     background-image: url("Mock/RecargaRapida.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 15%;
     height: 61vh;
@@ -1034,8 +1041,8 @@ button:active {
 
 .layout .item .pay-2 {
     background-image: url("Mock/PagarConta1.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 33%;
     height: 74vh;
@@ -1044,8 +1051,8 @@ button:active {
 
 .layout .item .pay {
     background-image: url("Mock/PagarConta2.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 15%;
     height: 61vh;
@@ -1055,8 +1062,8 @@ button:active {
 
 .layout .item .card-pp-2 {
     background-image: url("Mock/Cartão.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 33%;
     height: 74vh;
@@ -1073,8 +1080,8 @@ button:active {
 
 .layout .item .card-area .card-1 {
     background-image: url("Images/Card_home.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 49%;
     height: 17vh;
@@ -1082,8 +1089,8 @@ button:active {
 
 .layout .item .card-area .card-2 {
     background-image: url("Images/Card_home2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-repeat: round;
     background-size: cover;
     width: 49%;
     height: 17vh;
@@ -1093,17 +1100,17 @@ button:active {
     margin-left: 250px !important;
 }
 
-.analytics-list{
+.analytics-list {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.analytics-list .item{
+.analytics-list .item {
     width: 40%;
 }
 
-.analytics-list .item .number{
+.analytics-list .item .number {
     color: #E5E5E5;
     font-family: "Merriweather";
     font-weight: bold;
@@ -1111,7 +1118,7 @@ button:active {
     position: absolute;
 }
 
-.analytics-list .item .title{
+.analytics-list .item .title {
     color: #353535;
     font-family: "Merriweather";
     font-weight: bold;
@@ -1119,16 +1126,15 @@ button:active {
     margin-top: 45px;
     z-index: 1;
     position: relative;
-
 }
 
-.analytics-list .item .text{
+.analytics-list .item .text {
     color: #353535;
     font-family: "Merriweather";
     font-size: 1em;
 }
 
-.sitemap-main{
+.sitemap-main {
     background-image: url("Images/Sitemap.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -1138,7 +1144,7 @@ button:active {
     margin-top: 85px;
 }
 
-.case-footer{
+.case-footer {
     background-color: #F1F1F1;
     display: flex;
     justify-content: center;
@@ -1146,11 +1152,15 @@ button:active {
     padding: 2%;
 }
 
-.case-footer p{
+.case-footer p {
     color: #353535;
     font-family: "Merriweather";
     font-size: 1em;
     font-weight: bold;
+}
+
+.text-limit {
+    min-width: 430px;
 }
 
 
@@ -1178,7 +1188,6 @@ button:active {
     .layout .item .card-pp {
         left: 500px;
     }
-
     .layout .item .pay {
         left: 500px;
     }
@@ -1188,40 +1197,31 @@ button:active {
     .onboarding-container .image {
         height: 75vh;
     }
-    
     .layout .item .schedule {
         right: 260px;
         height: 75vh;
     }
-
     .layout .item .sales-on {
         right: 260px;
         height: 75vh;
     }
-
     .layout .item .schedule-2 {
         height: 63vh;
     }
-
     .layout .item .sales-on-2 {
         height: 63vh;
     }
-    
     .layout .item .card-pp {
         left: 355px;
         height: 63vh;
     }
-
     .layout .item .pay {
         left: 355px;
         height: 63vh;
     }
-
     .layout .item .pay-2 {
         height: 75vh;
-
     }
-
     .layout .item .image {
         height: 75vh;
     }
@@ -1231,17 +1231,61 @@ button:active {
     .mock {
         width: 30%;
     }
-
-    .mock .text{
+    .mock .text {
         width: 95%;
     }
-
     .projects {
         width: 100%;
     }
-
     .ma-top-g {
         margin-top: 280px;
+    }
+    .case-page-header .text .btn-area button {
+        width: 25%;
+    }
+    .sitemap-container {
+        height: 60vh;
+    }
+    .wireframe-list .img {
+        height: 50vh;
+    }
+    .wireframe-map {
+        min-height: 110vh;
+    }
+    .onboarding-container .image {
+        height: 65vh;
+    }
+    .layout .item .image {
+        height: 65vh;
+    }
+    .layout .item .schedule {
+        height: 65vh;
+    }
+    .layout .item .schedule-2 {
+        height: 53vh;
+    }
+    .layout .item .sales-on {
+        height: 65vh;
+    }
+    .layout .item .sales-on-2 {
+        height: 53vh;
+    }
+    .layout .item .card-pp-2 {
+        height: 65vh;
+    }
+    .layout .item .card-pp {
+        height: 54vh;
+        left: 320px;
+    }
+    .layout .item .pay-2 {
+        height: 65vh;
+    }
+    .layout .item .pay {
+        height: 54vh;
+        left: 320px;
+    }
+    .text-limit {
+        min-width: 330px;
     }
 }
 
@@ -1249,13 +1293,58 @@ button:active {
     .mock {
         width: 40%;
     }
-
-    .mock .text{
+    .mock .text {
         width: 75%;
     }
-
     .ma-top-g {
         margin-top: 250px;
+    }
+    .onboarding-container .image {
+        height: 66vh;
+    }
+    .layout .item .image {
+        height: 65vh;
+    }
+    .layout .item .schedule {
+        height: 65vh;
+    }
+    .layout .item .schedule-2 {
+        height: 53vh;
+    }
+    .layout .item .sales-on {
+        height: 66vh;
+    }
+    .layout .item .sales-on-2 {
+        height: 55vh;
+    }
+    .layout .item .card-pp-2 {
+        height: 66vh;
+    }
+    .layout .item .card-pp {
+        height: 55vh;
+        left: 300px;
+    }
+    .layout .item .pay-2 {
+        height: 66vh;
+    }
+    .layout .item .pay {
+        height: 55vh;
+        left: 300px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .onboarding-container .image {
+        height: 63vh;
+    }
+    .layout .item .s1 {
+        height: 63vh;
+    }
+    .layout .item .s-2 {
+        height: 53vh;
+    }
+    .layout .item .left {
+        left: 300px;
     }
 }
 
@@ -1263,16 +1352,28 @@ button:active {
     .mock {
         width: 35%;
     }
-
-    .mock .text{
+    .mock .text {
         width: 95%;
     }
-
     .ma-top-g {
         margin-top: 250px;
     }
-
     .cases-text {
+        width: 60%;
+    }
+    .onboarding-container .image {
+        height: 60vh;
+    }
+    .layout .item .card-pp {
+        left: 270px;
+    }
+    .layout .item .pay {
+        left: 270px;
+    }
+    .ma-left-250px {
+        margin-left: 150px !important;
+    }
+    .wireframe-list {
         width: 60%;
     }
 }
@@ -1284,6 +1385,15 @@ button:active {
     .cases {
         padding: 10% 8% 10% 8%;
     }
+    .layout .item .schedule {
+        right: 200px;
+    }
+    .layout .item .sales-on {
+        right: 200px;
+    }
+    .wireframe-map {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -1293,131 +1403,211 @@ button:active {
     .cases-text {
         width: 80%;
     }
-
-
     .ma-top-m {
         margin-top: 40px;
+    }
+    .case-page-header .text .btn-area button {
+        width: 30%;
+    }
+    .onboarding-container .image {
+        height: 55vh;
+    }
+    .layout .item .image {
+        height: 55vh !important;
+    }
+    .layout .item .s-1 {
+        height: 55vh !important;
+    }
+    .layout .item .s-2 {
+        height: 45vh;
+    }
+    .layout .item .left {
+        left: 250px;
+    }
+    .sitemap-container {
+        height: 55vh;
+    }
+    .wireframe-list {
+        width: 65%;
+    }
+}
+
+@media (max-width: 950px) {
+    .wireframe-map {
+        width: 100%;
     }
 }
 
 @media (max-width: 900px) {
-
     .ma-top-g {
         margin-top: 230px;
+    }
+    .sitemap-container {
+        height: 45vh;
+    }
+    .wireframe-list {
+        width: 70%;
     }
 }
 
 @media (max-width: 850px) {
-
     .experiences .item .item-text {
         width: 90%;
     }
-
     .ma-top-g {
         margin-top: 270px;
     }
-
     .header-photo-container .photo {
         height: 200px;
         width: 200px;
     }
-
     .header-title-font-g {
         font-size: 1.5em;
+    }
+    .case-page-header .text .btn-area button {
+        width: 35%;
+    }
+    .sitemap-container {
+        height: 40vh;
+    }
+    .wireframe-list {
+        width: 75%;
+    }
+    .wireframe-map {
+        min-height: 095vh;
     }
 }
 
 @media (max-width: 750px) {
-
     .experiences .item .item-image {
         display: none;
     }
-
     .ma-top-m {
         margin-top: 80px;
     }
-
     .ma-top-g {
         margin-top: 300px;
     }
-
     .cases-text {
         width: 100%;
     }
-
     .with-me-photo-container .photo {
         height: 300px;
         min-width: 200px;
-    }    
-
+    }
     .with-me-description {
         width: 65%;
     }
-
     .header-photo-container {
         width: 65%;
+    }
+    .wireframe-list {
+        width: 85%;
+    }
+    .wireframe-map {
+        min-height: 90vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .case-page-header .text .btn-area button {
+        width: 40%;
+    }
+    .sitemap-container {
+        height: 35vh;
     }
 }
 
 @media (max-width: 650px) {
-
     .ma-top-g {
         margin-top: 250px;
     }
-
     .with-me-photo-container {
         display: none;
     }
-
     .with-me-description {
         width: 100%;
     }
-
+    .case-page-header .text .btn-area button {
+        width: 45%;
+    }
+    .wireframe-list {
+        flex-direction: column;
+    }
+    .wireframe-list .img-container {
+        width: 50%;
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 600px) {
-
     .ma-top-m {
         margin-top: 30px;
     }
-
     .ma-top-g {
         margin-top: 270px;
     }
-
+    .case-page-header .text h1 {
+        font-size: 2em;
+    }
+    .case-page-header .text h2 {
+        font-size: 1em;
+    }
+    .case-page-header .text .btn-area button {
+        width: 50%;
+    }
+    .case-page-header {
+        height: 65vh;
+    }
+    .sitemap-container {
+        height: 30vh;
+    }
 }
 
 @media (max-width: 550px) {
-
     .ma-top-m {
         margin-top: 100px;
     }
-
     .ma-top-g {
         margin-top: 310px;
     }
-
     .timeline-icon .line-container .line {
         height: 500px;
+    }
+    .case-page-header .text {
+        width: 60%;
+    }
+    .case-page-header .text .btn-area button {
+        width: 40%;
+    }
+    .wireframe-list .img-container {
+        width: 55%;
+        margin-bottom: 50px;
     }
 }
 
 @media (max-width: 530px) {
-
     .ma-top-m {
         margin-top: 80px;
     }
-
     .ma-top-g {
         margin-top: 280px;
     }
-
     .header-photo-container .photo {
         height: 150px;
         width: 150px;
     }
-
     .header-photo-container {
         width: 50%;
+    }
+    .case-page-header .text .btn-area button {
+        width: 45%;
+    }
+    .sitemap-container {
+        height: 25vh;
+    }
+    .wireframe-list .img-container {
+        width: 60%;
+        margin-bottom: 50px;
     }
 }
