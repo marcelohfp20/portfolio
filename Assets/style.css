@@ -495,11 +495,18 @@ button:active {
     margin-top: -50px;
 }
 
-.mock p {
+.mock .text{
+    align-self: flex-start;
+    width: 60%;
+}
+
+
+.mock .text p {
     font-family: "Merriweather";
     color: #767676;
+    text-align: center;
     font-size: 0.8em;
-    margin: 0px 80px 20px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .imagesection {
@@ -1220,9 +1227,53 @@ button:active {
     }
 }
 
+@media (max-width: 1270px) {
+    .mock {
+        width: 30%;
+    }
+
+    .mock .text{
+        width: 95%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .ma-top-g {
+        margin-top: 280px;
+    }
+}
+
 @media (max-width: 1200px) {
     .mock {
         width: 40%;
+    }
+
+    .mock .text{
+        width: 75%;
+    }
+
+    .ma-top-g {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .mock {
+        width: 35%;
+    }
+
+    .mock .text{
+        width: 95%;
+    }
+
+    .ma-top-g {
+        margin-top: 250px;
+    }
+
+    .cases-text {
+        width: 60%;
     }
 }
 
@@ -1241,5 +1292,132 @@ button:active {
     }
     .cases-text {
         width: 80%;
+    }
+
+
+    .ma-top-m {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .ma-top-g {
+        margin-top: 230px;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .experiences .item .item-text {
+        width: 90%;
+    }
+
+    .ma-top-g {
+        margin-top: 270px;
+    }
+
+    .header-photo-container .photo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .header-title-font-g {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .experiences .item .item-image {
+        display: none;
+    }
+
+    .ma-top-m {
+        margin-top: 80px;
+    }
+
+    .ma-top-g {
+        margin-top: 300px;
+    }
+
+    .cases-text {
+        width: 100%;
+    }
+
+    .with-me-photo-container .photo {
+        height: 300px;
+        min-width: 200px;
+    }    
+
+    .with-me-description {
+        width: 65%;
+    }
+
+    .header-photo-container {
+        width: 65%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .ma-top-g {
+        margin-top: 250px;
+    }
+
+    .with-me-photo-container {
+        display: none;
+    }
+
+    .with-me-description {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .ma-top-m {
+        margin-top: 30px;
+    }
+
+    .ma-top-g {
+        margin-top: 270px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .ma-top-m {
+        margin-top: 100px;
+    }
+
+    .ma-top-g {
+        margin-top: 310px;
+    }
+
+    .timeline-icon .line-container .line {
+        height: 500px;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .ma-top-m {
+        margin-top: 80px;
+    }
+
+    .ma-top-g {
+        margin-top: 280px;
+    }
+
+    .header-photo-container .photo {
+        height: 150px;
+        width: 150px;
+    }
+
+    .header-photo-container {
+        width: 50%;
     }
 }
