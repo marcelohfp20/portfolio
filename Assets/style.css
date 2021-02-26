@@ -589,12 +589,13 @@ button:active {
     height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .cases-list .item {
     width: 30%;
+    margin-right: 30px;
     min-width: 350px;
     height: 45vh;
     border-radius: 3%;
@@ -611,7 +612,7 @@ button:active {
     background-image: url("Mock/cases/ContaJusta.jpg");
 }
 
-.cases-list .conta-justa-2 {
+.cases-list .app-justo {
     background-image: url("Mock/cases/Justo.jpg");
 }
 
@@ -654,10 +655,17 @@ button:active {
 
 /* CASE PAGE */
 
+.case-contaJusta {
+    background-image: url("Mock/cases/ContaJusta_Detalhes.jpg");
+}
+
+.case-appJusto {
+    background-image: url("Mock/cases/Justo_Detalhes.jpg");
+}
+
 .case-page-header {
     height: 80vh;
     width: 100%;
-    background-image: url("Mock/cases/ContaJusta_Detalhes.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1161,6 +1169,16 @@ button:active {
 
 .text-limit {
     min-width: 430px;
+}
+
+.Kickoff {
+    background-image: url("Images/Kickoff.png");
+    background-position: center;
+    background-repeat: round;
+    background-size: cover;
+    width: 91%;
+    height: 1000px;
+    margin-top: 7%;
 }
 
 

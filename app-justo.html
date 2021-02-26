@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="Assets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>App Conta Justa | Marcelo Henrique</title>
+    <title>Redesign Portal do Justo | Marcelo Henrique</title>
 </head>
 
 <body>
 
-    <header class="case-page-header case-contaJusta">
+    <header class="case-page-header case-appJusto">
 
         <div class="menu">
 
@@ -31,9 +31,10 @@
 
         </div>
 
+
         <div class="text" id="header">
 
-            <h1>Conta Justa</h1>
+            <h1>Redesign portal do Justo</h1>
 
             <h2>Aplicativo</h2>
 
@@ -59,39 +60,46 @@
 
                     <p class="title">Introdução</p>
 
-                    <p class="text">A empresa citada é a Justa Pagamentos, uma fintech sobre meios de pagamentos, focada em pequenos varejistas por todo o Brasil.</p>
-
-                </div>
-
-            </div>
-
-            <div class="anchor" id="problema">
-
-                <div class="topic">
-
-                    <p class="title">Problema</p>
-
-                    <p class="text">Atualmente os clientes varejistas usam o site (Portal do Lojista), para gerenciar as suas vendas e configurar os adiantamentos de recebíveis. De acordo com feedbacks recebidos pelos mesmos durante suas jornadas, o site precisaria de
-                        uma versão responsiva para o gerenciamento do negocio fluir de forma rápida e eficiente através do seu celular, já que o site não foi feito com um suporte/tecnologia para ser visualizado em um dispositivo menor.</p>
-
-                </div>
-
-            </div>
-
-            <div class="anchor" id="solucao">
-
-                <div class="topic">
-
-                    <p class="title">Solução</p>
-
-                    <p class="text">Criar um aplicativo intuitivo e simples para ajudar o lojista a gerenciar as suas vendas de forma fácil e mais próxima com a sua realidade.
+                    <p class="text">O "Portal do Justo" é um portal de gestão para os profissionais responsáveis pela venda das maquininhas de cartão da empresa. O objetivo principal do aplicativo é realizar a jornada da simulação de taxas e cadastro completo de um novo
+                        cliente.
                     </p>
 
                 </div>
 
             </div>
 
-            <div class="anchor" id="desafio">
+            <div class="anchor" id="Desafio">
+
+                <div class="topic">
+
+                    <p class="title">Desafio</p>
+
+                    <p class="text">O meu desafio no projeto foi realizar melhorias na experiência e no Layout do APP. Com base nas boas práticas de heurísticas trabalhadas no mercado, além dos feedbacks recebidos nas versões anteriores.</p>
+
+                </div>
+
+            </div>
+
+            <div class="anchor" id="Kick-off">
+
+                <div class="topic">
+
+                    <p class="title">Kick off</p>
+
+                    <p class="text">Antes de colocar a mão na massa, discutimos sobre tudo o que já foi criado no APP e levantamos vários insights sobre as jornadas e o layout.
+                    </p>
+
+                    <p class="subtitle">Alguns exemplos:</p>
+
+                    <div class="Kickoff"></div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+            <!-- <div class="anchor" id="desafio">
 
                 <div class="topic">
 
@@ -409,9 +417,9 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
-                </div>
+            </div>
 
             </div>
 
@@ -426,35 +434,28 @@
                 </li>
 
                 <li>
-                    <a id="problema" href="#problema" class="anchor-item" onclick="redirect()">Problema</a>
+                    <a id="Desafio" href="#Desafio" class="anchor-item" onclick="redirect()">Desafio</a>
                 </li>
 
                 <li>
-                    <a id="solucao" href="#solucao" class="anchor-item" onclick="redirect()">Solução</a>
+                    <a id="Kick-off" href="#Kick-off" class="anchor-item" onclick="redirect()">Kick-off</a>
                 </li>
 
                 <li>
-                    <a id="desafio" href="#desafio" class="anchor-item" onclick="redirect()">Desafio</a>
+                    <a id="Layout" href="#Layout" class="anchor-item" onclick="redirect()">Layout</a>
                 </li>
 
                 <li>
-                    <a id="sitemap" href="#sitemap" class="anchor-item" onclick="redirect()">Sitemap</a>
+                    <a id="Testes" href="#Testes" class="anchor-item" onclick="redirect()">Testes</a>
                 </li>
 
                 <li>
-                    <a id="wireframe" href="#wireframe" class="anchor-item" onclick="redirect()">Wireframe</a>
-                </li>
-
-                <li>
-                    <a id="layout" href="#layout" class="anchor-item" onclick="redirect()">Layout</a>
-                </li>
-
-                <li>
-                    <a id="analise" href="#analise" class="anchor-item" onclick="redirect()">Análises</a>
+                    <a id="Analises" href="#Analises" class="anchor-item" onclick="redirect()">Análises</a>
                 </li>
 
 
             </ul>
+
 
         </div>
 
@@ -478,34 +479,25 @@
 
                 location.href = "#introducao";
                 break;
-            case 'problema':
+            case 'Desafio':
 
-                location.href = "#problema";
+                location.href = "#Desafio";
                 break;
-            case 'solucao':
+            case 'Kick-off':
 
-                location.href = "#solucao";
+                location.href = "#Kick-off";
                 break;
-            case 'desafio':
+            case 'Layout':
 
-                location.href = "#desafio";
+                location.href = "#Layout";
                 break;
-            case 'sitemap':
+            case 'Testes':
 
-                location.href = "#sitemap";
+                location.href = "#Testes";
                 break;
-            case 'wireframe':
+            case 'Analises':
 
-                location.href = "#wireframe";
-                break;
-            case 'layout':
-
-                location.href = "#layout";
-                break;
-            case 'analise':
-
-                location.href = "#analise";
-
+                location.href = "#Analises";
                 break;
 
             default:
@@ -576,13 +568,13 @@
 
     function redirectGooglePlay() {
 
-        window.open("https://play.google.com/store/apps/details?id=br.com.justa.contajusta&hl=pt_BR");
+        window.open("https://play.google.com/store/apps/details?id=br.com.justa.justo");
 
     }
 
     function redirectAppStore() {
 
-        window.open("https://apps.apple.com/us/app/conta-justa/id1529173880");
+        window.open("https://apps.apple.com/us/app/app-do-justo/id1517408803");
 
     }
 
