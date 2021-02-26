@@ -435,7 +435,7 @@ button:active {
 
 .projects {
     height: 20vh;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -450,8 +450,8 @@ button:active {
 
 .projects .poliedro {
     background-image: url("Images/poliedro.jpg");
-    width: 190px;
-    height: 80px;
+    width: 180px;
+    height: 70px;
 }
 
 .projects .deloitte {
