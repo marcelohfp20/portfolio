@@ -435,7 +435,7 @@ button:active {
 
 .projects {
     height: 20vh;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -487,7 +487,7 @@ button:active {
 }
 
 .mock {
-    width: 25%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -497,7 +497,7 @@ button:active {
 
 .mock .text {
     align-self: flex-start;
-    width: 60%;
+    width: 90%;
 }
 
 .mock .text p {
@@ -577,8 +577,8 @@ button:active {
     text-transform: uppercase;
 }
 
-.title-cases {
-    font-size: 1em;
+.title-cases h1 {
+    font-size: 1.8em;
     color: #F25918;
     font-family: "Merriweather-Black";
     margin-bottom: 30px;
