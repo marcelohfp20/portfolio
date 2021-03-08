@@ -148,12 +148,12 @@ button:active {
 }
 
 .social-media {
-    width: 220px;
+    width: 248px;
     height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 26px;
 }
 
 .social-media .icon {
@@ -175,6 +175,10 @@ button:active {
 
 .social-media .behance {
     background-image: url("Icons/behance.png");
+}
+
+.social-media .dribbble {
+    background-image: url("Icons/dribbble.png");
 }
 
 .home-main {
@@ -992,8 +996,16 @@ button:active {
     background-image: url("Mock/Home.png");
 }
 
+.layout .item .menu {
+    background-image: url("Mock/MenuJusto.png");
+}
+
 .layout .item .manage {
     background-image: url("Mock/VendasHoje.png");
+}
+
+.layout .item-menu {
+    margin-top: 10%;
 }
 
 .layout .item .schedule {
@@ -1014,6 +1026,16 @@ button:active {
     background-size: cover;
     width: 27%;
     height: 60vh;
+}
+
+.layout .item .Leads {
+    background-image: url("Mock/Leads.png");
+    background-repeat: round;
+    background-size: cover;
+    width: 29%;
+    height: 90vh;
+    position: absolute;
+    right: 300px;
 }
 
 .layout .item .sales-on {
@@ -1172,7 +1194,7 @@ button:active {
 }
 
 .Kickoff {
-    background-image: url("Images/Kickoff.png");
+    background-image: url("Images/Melhorias.png");
     background-position: center;
     background-repeat: round;
     background-size: cover;
