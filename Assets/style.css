@@ -1230,7 +1230,7 @@ button:active {
     background-repeat: round;
     background-size: cover;
     width: 91%;
-    height: 130vh;
+    height: 152vh;
     margin-top: 7%;
 }
 
@@ -1299,6 +1299,9 @@ button:active {
 }
 
 @media (max-width: 1270px) {
+    .Kickoff {
+        height: 132vh;
+    }
     .mock {
         width: 30%;
     }
