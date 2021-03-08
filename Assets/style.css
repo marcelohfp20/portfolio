@@ -996,6 +996,24 @@ button:active {
     background-image: url("Mock/VendasHoje.png");
 }
 
+.layout .item .new-menu {
+    background-image: url("Mock/Menu.png");
+}
+
+.layout .item .pos{
+    background-image: url("Mock/AtivacaoPOS.png");
+}
+
+.layout .item .heroes{
+    background-image: url("Mock/DetalhesHeroi.png");
+}
+
+.layout .item .tamo-justo{
+    background-image: url("Mock/TamoJusto.png");
+}
+
+
+
 .layout .item .schedule {
     background-image: url("Mock/Agenda.png");
     /* background-position: center; */
@@ -1009,6 +1027,26 @@ button:active {
 
 .layout .item .schedule-2 {
     background-image: url("Mock/Agenda2.png");
+    /* background-position: center; */
+    background-repeat: round;
+    background-size: cover;
+    width: 27%;
+    height: 60vh;
+}
+
+.layout .item .leads {
+    background-image: url("Mock/Pedido.png");
+    /* background-position: center; */
+    background-repeat: round;
+    background-size: cover;
+    width: 18%;
+    height: 74vh;
+    position: absolute;
+    right: 300px;
+}
+
+.layout .item .leads-2 {
+    background-image: url("Mock/Simulação.png");
     /* background-position: center; */
     background-repeat: round;
     background-size: cover;
@@ -1160,11 +1198,18 @@ button:active {
     padding: 2%;
 }
 
-.case-footer p {
+.layout .item .title {
     color: #353535;
     font-family: "Merriweather";
     font-size: 1em;
     font-weight: bold;
+}
+
+.layout .item p {
+    color: #353535;
+    font-family: "Merriweather";
+    font-size: 1em;
+    /* font-weight: bold; */
 }
 
 .text-limit {
@@ -1177,7 +1222,7 @@ button:active {
     background-repeat: round;
     background-size: cover;
     width: 91%;
-    height: 1000px;
+    height: 130vh;
     margin-top: 7%;
 }
 
